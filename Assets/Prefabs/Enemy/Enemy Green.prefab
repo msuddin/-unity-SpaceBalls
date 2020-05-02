@@ -121,8 +121,9 @@ MonoBehaviour:
     type: 3}
   deathSfx: {fileID: 8300000, guid: b427d728c7d0314499ffc72f91c61e4b, type: 3}
   deathSfxVolumn: 0.7
-  shootSfx: {fileID: 8300000, guid: a884fc51ca3f3ed42af62c87c87e06c4, type: 3}
+  shootSfx: {fileID: 8300000, guid: 0efc3bddbcd909541ba5c64f919f7da6, type: 3}
   shootSfxVolumn: 0.25
+  scorePoints: 100
 --- !u!58 &2522063808591952289
 CircleCollider2D:
   m_ObjectHideFlags: 0

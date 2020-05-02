@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadGameScene()
     {
-        EditorSceneManager.LoadScene("Core");
+        SceneManager.LoadScene("Core");
     }
 
     public void LoadGameOver()
@@ -21,13 +21,13 @@ public class SceneLoader : MonoBehaviour
     private IEnumerator LoadGameOverShortDelay()
     {
         yield return new WaitForSeconds(gameOverSceneLoadDelay);
-        EditorSceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Game Over");
     }
 
     public void LoadStartMenu()
     {
         FindObjectOfType<GameSession>().ResetPlayerScore();
-        EditorSceneManager.LoadScene("Start Game");
+        SceneManager.LoadScene("Start Game");
     }
 
     public void QuiteGame()

@@ -47,11 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 0.5
-  displayPlayerHealth: {fileID: 0}
   health: 200
-  deathSfx: {fileID: 8300000, guid: 3ec3d0e810dcc79429a8ff4db5c7d48a, type: 3}
+  deathSfx: {fileID: 8300000, guid: b427d728c7d0314499ffc72f91c61e4b, type: 3}
   deathSfxVolumn: 0.75
-  shootSfx: {fileID: 8300000, guid: e2f2a4933a7e609438759b7fbd3be833, type: 3}
+  shootSfx: {fileID: 8300000, guid: 5170778ae3638c24a952a31a57fb5a1a, type: 3}
   shootSfxVolumn: 0.75
   laserPrefab: {fileID: 9040029351464139981, guid: d510d78ac9e20294cbebc1ee173c20ad,
     type: 3}

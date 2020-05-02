@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8520382288935115353}
   - component: {fileID: 2438549613018189075}
   m_Layer: 9
-  m_Name: Enemy Purple
+  m_Name: Enemy Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0a99a41a4fa443e4a9669166b6b87919, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 456d88e6eb6755842bca98b55cbe7298, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,20 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbad786c11be01e45974427774b17303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10000
+  health: 200
   shotCounter: 0
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 2
-  projectile: {fileID: 9040029351464139981, guid: a00e66b7f708038438ce588bda04641b,
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 3
+  projectile: {fileID: 9040029351464139981, guid: 235eac56deafc9346ba7c54cab875ab6,
     type: 3}
-  projectTileSpeed: -2
+  projectTileSpeed: -10
   deathVfx: {fileID: 4573977919805238261, guid: 778ce94c530c10d448254e4447b6c1e0,
     type: 3}
   deathSfx: {fileID: 8300000, guid: b427d728c7d0314499ffc72f91c61e4b, type: 3}
   deathSfxVolumn: 0.7
-  shootSfx: {fileID: 8300000, guid: a884fc51ca3f3ed42af62c87c87e06c4, type: 3}
+  shootSfx: {fileID: 8300000, guid: 0efc3bddbcd909541ba5c64f919f7da6, type: 3}
   shootSfxVolumn: 0.25
-  scorePoints: 500
+  scorePoints: 250
 --- !u!58 &1763892272233477752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,9 +137,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09742546}
+  m_Offset: {x: -0.015535593, y: 0.033216715}
   serializedVersion: 2
-  m_Radius: 1.5043187
+  m_Radius: 0.36398816
 --- !u!50 &-8520382288935115353
 Rigidbody2D:
   serializedVersion: 4
