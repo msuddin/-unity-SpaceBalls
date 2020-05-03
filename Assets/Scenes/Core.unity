@@ -1025,13 +1025,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884421907340675195, guid: 0e24db43c307d1b4f9fda5827e59d839,
         type: 3}
-      propertyPath: displayPlayerHealth
+      propertyPath: innerCircle
       value: 
-      objectReference: {fileID: 1855631340}
+      objectReference: {fileID: 0}
     - target: {fileID: 5884421907340675195, guid: 0e24db43c307d1b4f9fda5827e59d839,
         type: 3}
-      propertyPath: health
-      value: 400
+      propertyPath: outterCircle
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e24db43c307d1b4f9fda5827e59d839, type: 3}

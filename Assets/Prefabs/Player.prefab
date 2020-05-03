@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 0.5
-  health: 200
+  health: 400
   deathSfx: {fileID: 8300000, guid: b427d728c7d0314499ffc72f91c61e4b, type: 3}
   deathSfxVolumn: 0.75
   shootSfx: {fileID: 8300000, guid: 5170778ae3638c24a952a31a57fb5a1a, type: 3}
@@ -56,6 +56,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileFirePeriod: 0.1
+  innerCircle: {fileID: 0}
+  outterCircle: {fileID: 0}
 --- !u!212 &5884421907340675193
 SpriteRenderer:
   m_ObjectHideFlags: 0

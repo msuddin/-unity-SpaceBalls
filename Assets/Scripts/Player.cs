@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
     float yMin;
     float yMax;
 
+    bool touchStart = false;
+    float playerMoveSpeed = 5.0f;
+    Vector2 pointA;
+    Vector2 pointB;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +43,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        MoveWithMouse();
         Fire();
     }
 
@@ -84,6 +90,29 @@ public class Player : MonoBehaviour
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
         
         transform.position = new Vector2(newXPos, newYPos);
+    }
+
+    private void MoveWithMouse()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            pointA = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+        }
+        if (Input.GetMouseButton(0))
+        {
+            touchStart = true;
+            pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+        }
+        else
+        {
+            touchStart = false;
+        }
+        if (touchStart)
+        {
+            Vector2 offSet = pointB - pointA;
+            Vector2 direction = Vector2.ClampMagnitude(offSet, 1.0f);
+            transform.Translate((direction) * playerMoveSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D colliderObject)
