@@ -26,12 +26,23 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStartMenu()
     {
-        FindObjectOfType<GameSession>().ResetPlayerScore();
+        ResetGameStats();
         SceneManager.LoadScene("Start Game");
     }
 
     public void QuiteGame()
     {
         Application.Quit();
+    }
+
+    public void RestartGame()
+    {
+        ResetGameStats();
+        SceneManager.LoadScene("Core");
+    }
+
+    private void ResetGameStats()
+    {
+        FindObjectOfType<GameSession>().ResetPlayerScore();
     }
 }
