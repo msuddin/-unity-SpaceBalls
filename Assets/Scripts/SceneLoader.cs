@@ -15,7 +15,6 @@ public class SceneLoader : MonoBehaviour
     public void LoadGameOver()
     {
         StartCoroutine(LoadGameOverShortDelay());
-        
     }
 
     private IEnumerator LoadGameOverShortDelay()
